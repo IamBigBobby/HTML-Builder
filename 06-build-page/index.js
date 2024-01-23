@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-let arrBundleCss = [];
-let assetsDirectory = path.join(__dirname, 'assets');
-let assetsCopyDirectory = path.join(__dirname, 'project-dist/assets');
-let teamplateHtml = path.join(__dirname, 'template.html');
-let indexHtml = path.join(__dirname, 'project-dist/index.html');
+const arrBundleCss = [];
+const assetsDirectory = path.join(__dirname, 'assets');
+const assetsCopyDirectory = path.join(__dirname, 'project-dist', 'assets');
+const teamplateHtml = path.join(__dirname, 'template.html');
+const indexHtml = path.join(__dirname, 'project-dist', 'index.html');
 
 // writeStream
 const outBundleCss = fs.createWriteStream(
